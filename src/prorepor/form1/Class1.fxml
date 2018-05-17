@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" styleClass="background" stylesheets="@../css/DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prorepor.form1.Class1Controller">
+   <children>
+      <AnchorPane layoutX="160.0" layoutY="63.0" prefHeight="564.0" prefWidth="817.0" style="-fx-background-color: #ffffff;">
+       
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="155.0" layoutY="65.0" prefHeight="126.0" prefWidth="167.0" styleClass="background" text="NORTH" />
+            <BorderPane layoutX="409.0" layoutY="128.0" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+      <MenuButton layoutX="160.0" layoutY="14.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="186.0" styleClass="button" text="SELECT CLASS">
+        <items>
+          <MenuItem mnemonicParsing="false" text="North" />
+          <MenuItem mnemonicParsing="false" onAction="#goEast" text="East" />
+            <MenuItem mnemonicParsing="false" onAction="#goWest" text="West" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

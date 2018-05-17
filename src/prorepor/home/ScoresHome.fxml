@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" styleClass="background" stylesheets="@../css/DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prorepor.home.ScoresHomeController">
+   <children>
+      <Button layoutX="198.0" layoutY="230.0" mnemonicParsing="false" onAction="#goForm1Class1" prefHeight="135.0" prefWidth="193.0" text="FORM 1" />
+      <Button layoutX="531.0" layoutY="450.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="193.0" text="FORM 4" />
+      <Button layoutX="192.0" layoutY="450.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="193.0" text="FORM 3" />
+      <Button layoutX="524.0" layoutY="230.0" mnemonicParsing="false" onAction="#goForm2Page" prefHeight="135.0" prefWidth="193.0" text="FORM 2" />
+   </children>
+</AnchorPane>

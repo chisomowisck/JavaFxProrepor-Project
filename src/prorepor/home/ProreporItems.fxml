@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" styleClass="background" stylesheets="@../css/DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prorepor.home.ProreporItemsController">
+   <children>
+      <Button fx:id="viewKey" layoutX="135.0" layoutY="376.0" mnemonicParsing="false" onAction="#goViewStudents" prefHeight="153.0" prefWidth="313.0" text="BROWSE DETAILS OF STUDENTS" />
+      <Button layoutX="570.0" layoutY="382.0" mnemonicParsing="false" prefHeight="153.0" prefWidth="278.0" text="VIEW PROGRESS REPORTS" />
+      <Button layoutX="570.0" layoutY="166.0" mnemonicParsing="false" onAction="#goScoresHome" prefHeight="143.0" prefWidth="263.0" text="ENTER STUDENTS SCORES" />
+      <Button layoutX="135.0" layoutY="169.0" mnemonicParsing="false" onAction="#goAddStudent" prefHeight="143.0" prefWidth="313.0" text="ADD STUDENT IN THE DATABASE" />
+   </children>
+</AnchorPane>

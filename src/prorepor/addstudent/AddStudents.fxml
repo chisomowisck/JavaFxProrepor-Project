@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" styleClass="background" stylesheets="@../css/DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prorepor.addstudent.AddStudentsController">
+   <children>
+      <TableView fx:id="studentTable" layoutX="176.0" layoutY="97.0" onMouseClicked="#showOnClick" prefHeight="350.0" prefWidth="649.0">
+        <columns>
+          <TableColumn fx:id="sIdColumn" prefWidth="128.0" text="STUDENT ID" />
+          <TableColumn fx:id="fNameColumn" prefWidth="131.0" text="FIRSTNAME" />
+            <TableColumn fx:id="lNameColumn" prefWidth="118.0" text="LASTNAME" />
+            <TableColumn fx:id="genderColumn" prefWidth="90.0" text="GENDER" />
+            <TableColumn fx:id="formColumn" prefWidth="92.0" text="FORM" />
+            <TableColumn fx:id="classColumn" prefWidth="74.0" text="CLASS" />
+        </columns>
+      </TableView>
+      <TextField fx:id="sIdField" layoutX="176.0" layoutY="459.0" prefHeight="34.0" prefWidth="206.0" promptText="Student ID" styleClass="text-field" />
+      <TextField fx:id="classField" layoutX="619.0" layoutY="515.0" prefHeight="46.0" prefWidth="206.0" promptText="Class" />
+      <TextField fx:id="lNameField" layoutX="619.0" layoutY="458.0" prefHeight="46.0" prefWidth="206.0" promptText="Last Name" />
+      <TextField fx:id="formField" layoutX="398.0" layoutY="515.0" prefHeight="46.0" prefWidth="206.0" promptText="Form" />
+      <TextField fx:id="fNameField" layoutX="398.0" layoutY="459.0" prefHeight="46.0" prefWidth="206.0" promptText="First Name" />
+      <Button layoutX="176.0" layoutY="586.0" mnemonicParsing="false" onAction="#addStudent" prefHeight="46.0" prefWidth="206.0" text="ADD STUDENT" />
+      <Button layoutX="398.0" layoutY="586.0" mnemonicParsing="false" onAction="#UpdateStudent" prefHeight="46.0" prefWidth="206.0" text="UPDATE STUDENT" />
+      <Button layoutX="619.0" layoutY="586.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="46.0" prefWidth="206.0" text="DELETE STUDENT" />
+      <TextField fx:id="searchStudentField" layoutX="176.0" layoutY="37.0" onMouseClicked="#searchStudent" promptText="Search" />
+      <RadioButton fx:id="maleRadiobtn" layoutX="176.0" layoutY="515.0" mnemonicParsing="false" onMouseClicked="#maleRadioBtn" prefHeight="46.0" prefWidth="92.0" styleClass="table-view" text="Male" />
+      <RadioButton fx:id="femaleRadiobtn" layoutX="279.0" layoutY="515.0" mnemonicParsing="false" onMouseClicked="#femaleRadioBtn" prefHeight="46.0" prefWidth="104.0" styleClass="table-view" text="Female" />
+   </children>
+</AnchorPane>
